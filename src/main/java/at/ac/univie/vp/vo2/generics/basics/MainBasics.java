@@ -8,6 +8,11 @@ public class MainBasics {
         String outputString = stringBox.unbox().toUpperCase();
         System.out.println(outputString);
 
+        StringBox stringBox2 = new StringBox();
+        stringBox2.box("abc");
+        String outputString2 = stringBox2.unbox().toUpperCase();
+        System.out.println(outputString2);
+
         // Falls auf der linken Seite die Typvariablen angegeben sind müssen sie auf der rechten Seite nicht
         // mehr angegebenen werden (Diamond Operator)
         Pair<String, Integer> pair = new Pair<>("xxx", -1);
